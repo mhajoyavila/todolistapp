@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do List</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flowing Through Tasks </h1>
+        <ul id="taskList">
+                <li>Gather Supplies</li>
+                <li>Prepare Workspace</li>
+                <li>Sketch or Plan</li>
+                <li>Prime Canvas</li>
+                <li>Mix Paints</li>
+                <li>Start Painting</li>
+                <li>Take Breaks</li>
+                <li>Detail Work</li>
+                <li>Let Dry</li>
+                <li>Review and Adjust</li>
+                <li>Clean Up</li>
+                <li>Store Artwork</li>
+                <li>Promote Your Art (Optional)</li>
+                <li>Plan Next Project</li>
+        </ul>
+                <% for (let i=0; i<addedItem.length; i++){ %>
+                <li><%= addedItem [i] %></li>
+                    <% } %>
+        </ul>
+    <form method="post">
+        <input type="text" name="addItem" placeholder="Add a new task">
+        <button type="submit" name="button">Add Task</button>
+    </form>
+    </div>
+</body>
+</html>
