@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My To Do List</title>
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
+<%- include('header'); -%>
+
 <body>
     <div class="container">
         <h1>Flowing Through Tasks </h1>
@@ -29,10 +23,8 @@
                 <li><%= addedItem [i] %></li>
                     <% } %>
         </ul>
-    <form method="post">
-        <input type="text" name="addItem" placeholder="Add a new task">
-        <button type="submit" name="button">Add Task</button>
-    </form>
+
+        <%- include('form'); -%>
+
     </div>
-</body>
-</html>
+<%- include('footer'); -%>   
